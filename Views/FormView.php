@@ -7,7 +7,7 @@ class FormView
     
     public function __construct() 
     {
-        $this->view = new \lw_view(dirname(__FILE__).'/templates/Form.tpl.phtml');
+        $this->view = new \lw_view(dirname(__FILE__).'/Templates/Form.tpl.phtml');
     }
     
     public function render($data, $lang)
