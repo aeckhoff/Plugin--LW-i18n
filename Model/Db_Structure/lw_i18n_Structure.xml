@@ -1,0 +1,18 @@
+<migration>
+<version>1</version>
+<up>
+<createTable name="lw_i18n">
+    <fields>
+        <field name="id" type="number" size="11" special="auto_increment" />
+        <field name="category" type="text" size="255" />
+        <field name="language" type="text" size="2" />
+        <field name="lw_key" type="text" size="255" />
+        <field name="text" type="text" size="255" />
+        <pk>id</pk>
+    </fields>
+</createTable>
+
+</up>
+
+</migration>
+

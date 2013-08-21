@@ -69,7 +69,8 @@ class I18nController extends \lw_object
     {
         $qH = new \LwI18n\Model\queryHandler($this->db);
         $cH = new \LwI18n\Model\commandHandler($this->db);
-
+        $this->db->tableExists("lw_i18n");
+            
         foreach($dataByPlugin as $lang => $pluginData) {
             foreach($pluginData as $pluginname => $keyText) {
                 foreach($keyText as $key => $text) {

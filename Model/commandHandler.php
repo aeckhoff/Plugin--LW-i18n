@@ -32,8 +32,9 @@ class commandHandler
                                       category varchar(255) COLLATE utf8_unicode_ci NOT NULL,
                                       language varchar(2) COLLATE utf8_unicode_ci NOT NULL,
                                       lw_key varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-                                      text varchar(255) COLLATE utf8_unicode_ci NOT NULL
-                                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;");
+                                      text varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+                                      PRIMARY KEY (id)
+                                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;");
         
         return $this->db->pdbquery();
     }
