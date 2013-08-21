@@ -72,8 +72,7 @@ class commandHandler
         $this->db->bindParameter("category", "s", $category);
         $this->db->bindParameter("language", "s", $lang);
         $this->db->bindParameter("key", "s", $key);
-        $this->db->bindParameter("text", "s", htmlentities($text));
-        
+        $this->db->bindParameter("text", "s", $text);
         return $this->db->pdbquery();
     }    
 }
